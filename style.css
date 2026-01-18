@@ -54,11 +54,17 @@ body {
 
 .hero-text h1 {
   font-size: 56px;
+  text-shadow:
+    0 0 6px rgba(255,255,255,0.9),
+    0 0 12px rgba(255,255,255,0.7);
 }
 
 .hero-text p {
   margin-top: 16px;
   font-size: 22px;
+  text-shadow:
+    0 0 6px rgba(255,255,255,0.9),
+    0 0 12px rgba(255,255,255,0.7);
 }
 
 .cta {
@@ -84,6 +90,9 @@ body {
   left: 64px;
   font-size: 56px;
   font-weight: 500;
+  text-shadow:
+    0 0 8px rgba(255,255,255,0.95),
+    0 0 16px rgba(255,255,255,0.75);
 }
 
 /* BACKGROUNDS */
@@ -175,12 +184,15 @@ body {
 .blob-photo.teacher2 { background-image: url("./images/teacher2.jpeg"); }
 .blob-photo.teacher3 { background-image: url("./images/teacher3.jpeg"); }
 
-/* KIDS — FUN & BOLD */
+/* KIDS TEXT */
 .kids-text {
   margin-top: 120px;
   font-size: 22px;
   position: relative;
   z-index: 2;
+  text-shadow:
+    0 0 6px rgba(255,255,255,0.9),
+    0 0 12px rgba(255,255,255,0.7);
 }
 
 .section-kids iframe {
