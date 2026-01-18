@@ -52,7 +52,6 @@ body {
   align-items: center;
 }
 
-/* ✅ white exterior shadow for hero text */
 .hero-text h1,
 .hero-text p {
   text-shadow:
@@ -130,11 +129,14 @@ body {
   justify-content: center;
 }
 
+/* 🔧 STEP: Process cards 2× bigger */
 .card {
   background: white;
-  padding: 42px;
-  border-radius: 32px;
-  font-size: 20px;
+  padding: 84px 72px;        /* was ~42px */
+  border-radius: 36px;
+  font-size: 40px;           /* was 20px */
+  font-weight: 500;
+  text-align: center;
 }
 
 /* TEACHERS */
@@ -192,10 +194,7 @@ body {
 .blob-photo.teacher2 { background-image: url("./images/teacher2.jpeg"); }
 .blob-photo.teacher3 { background-image: url("./images/teacher3.jpeg"); }
 
-/* ========================= */
-/* TESTIMONIALS – RESTORED */
-/* ========================= */
-
+/* TESTIMONIALS */
 .testimonials-track {
   display: flex;
   gap: 40px;
@@ -221,7 +220,7 @@ body {
   font-weight: bold;
 }
 
-/* KIDS LETTERS (unchanged) */
+/* KIDS LETTERS */
 .kids-letters {
   position: absolute;
   inset: 0;
@@ -281,6 +280,11 @@ footer {
   .section-title {
     font-size: 42px;
     left: 32px;
+  }
+
+  .card {
+    font-size: 26px;
+    padding: 48px 36px;
   }
 
   .k-letter {
