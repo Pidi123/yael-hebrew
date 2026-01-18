@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* GLOBAL FONT */
+body {
+  font-family: Georgia, serif;
+  color: #102a43;
+  line-height: 1.7;
+}
+
+/* GLOBAL BG */
+.bg-global {
+  background: url("./images/bg1.jpeg") center / cover fixed;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 24px 64px;
+  background: rgba(255,255,255,0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo-box {
+  width: 420px;
+  height: 96px;
+  background: url("./images/logo.jpeg") center / contain no-repeat;
+}
+
+.nav-links a {
+  margin-left: 32px;
+  text-decoration: none;
+  color: #102a43;
+  font-size: 18px;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  padding: 220px 64px 64px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 120px;
+  align-items: center;
+}
+
+/* SECTION BASE */
+.section {
+  padding: 200px 64px 140px;
+  position: relative;
+}
+
+/* BIG LEFT TITLES */
+.section-title {
+  position: absolute;
+  top: 60px;
+  left: 64px;
+  font-size: 64px;
+  font-weight: 500;
+}
+
+/* PROCESS BG */
+.section-process {
+  background: url("./images/bg2.jpeg") center / cover;
+}
+
+/* KIDS BG */
+.section-kids {
+  background: url("./images/bg3.jpeg") center / cover;
+  text-align: center;
+}
+
+/* CONTACT BG */
+.section-contact {
+  background: url("./images/bg4.jpeg") center / cover;
+  text-align: center;
+}
+
+/* TESTIMONIALS BG */
+.section-testimonials {
+  background: url("./images/bg2.jpeg") center / cover;
+}
+
+/* BLOB SYSTEM */
+.blob-wrapper {
+  position: relative;
+  aspect-ratio: 1 / 1;
+}
+
+.hero-size { width: 520px; }
+.teacher-size { width: 320px; }
+
+.blob-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translate(-18px, 22px);
+  background: white;
+  border-radius: 60% 40% 55% 45%;
+  z-index: 1;
+}
+
+.blob-photo {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  border-radius: 45% 55% 50% 50%;
+  box-shadow: 0 30px 64px rgba(0,0,0,0.25);
+  z-index: 2;
+}
+
+/* IMAGES */
+.hero-photo { background-image: url("./images/hero.jpeg"); }
+.blob-photo.yael { background-image: url("./images/yael.jpeg"); }
+.blob-photo.teacher1 { background-image: url("./images/teacher1.jpeg"); }
+.blob-photo.teacher2 { background-image: url("./images/teacher2.jpeg"); }
+.blob-photo.teacher3 { background-image: url("./images/teacher3.jpeg"); }
+
+/* PROCESS */
+.process-steps {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 42px;
+  border-radius: 32px;
+  font-size: 20px;
+}
+
+/* TEACHERS */
+.teacher-row {
+  display: flex;
+  gap: 72px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.teacher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teacher-name {
+  margin-top: 32px;
+  font-size: 20px;
+}
+
+/* KIDS VIDEO */
+.section-kids iframe {
+  margin-top: 80px;
+  width: 100%;
+  max-width: 760px;
+  height: 420px;
+  border-radius: 28px;
+  border: none;
+}
+
+/* TESTIMONIALS SLIDER */
+.testimonials-track {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-top: 120px;
+}
+
+.testimonial {
+  min-width: 360px;
+  background: white;
+  padding: 36px;
+  border-radius: 28px;
+  scroll-snap-align: start;
+  font-size: 18px;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  padding: 48px;
+  text-align: center;
+  background: white;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 42px;
+    left: 32px;
+  }
+
+  .hero-size {
+    width: 360px;
+  }
+
+  .teacher-size {
+    width: 260px;
+  }
+
+  .process-steps,
+  .teacher-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
