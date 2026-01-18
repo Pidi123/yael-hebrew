@@ -35,12 +35,12 @@ body {
   background: url("./images/logo.jpeg") center / contain no-repeat;
 }
 
-/* 🔧 STEP A: nav titles slightly bigger */
+/* NAV LINKS (from Step A) */
 .nav-links a {
   margin-left: 32px;
   text-decoration: none;
   color: #102a43;
-  font-size: 24px; /* was ~18px */
+  font-size: 24px;
 }
 
 /* HERO */
@@ -135,9 +135,10 @@ body {
   align-items: center;
 }
 
+/* 🔧 STEP B: teacher names slightly bigger */
 .teacher-name {
   margin-top: 32px;
-  font-size: 20px;
+  font-size: 28px; /* was 20px */
 }
 
 /* BLOBS */
@@ -224,6 +225,10 @@ footer {
 
   .teacher-size {
     width: 260px;
+  }
+
+  .teacher-name {
+    font-size: 22px;
   }
 
   .process-steps,
