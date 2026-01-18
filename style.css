@@ -35,11 +35,12 @@ body {
   background: url("./images/logo.jpeg") center / contain no-repeat;
 }
 
+/* 🔧 STEP A: nav titles slightly bigger */
 .nav-links a {
   margin-left: 32px;
   text-decoration: none;
   color: #102a43;
-  font-size: 18px;
+  font-size: 24px; /* was ~18px */
 }
 
 /* HERO */
@@ -54,17 +55,11 @@ body {
 
 .hero-text h1 {
   font-size: 56px;
-  text-shadow:
-    0 0 6px rgba(255,255,255,0.9),
-    0 0 12px rgba(255,255,255,0.7);
 }
 
 .hero-text p {
   margin-top: 16px;
   font-size: 22px;
-  text-shadow:
-    0 0 6px rgba(255,255,255,0.9),
-    0 0 12px rgba(255,255,255,0.7);
 }
 
 .cta {
@@ -90,9 +85,6 @@ body {
   left: 64px;
   font-size: 56px;
   font-weight: 500;
-  text-shadow:
-    0 0 8px rgba(255,255,255,0.95),
-    0 0 16px rgba(255,255,255,0.75);
 }
 
 /* BACKGROUNDS */
@@ -184,53 +176,6 @@ body {
 .blob-photo.teacher2 { background-image: url("./images/teacher2.jpeg"); }
 .blob-photo.teacher3 { background-image: url("./images/teacher3.jpeg"); }
 
-/* KIDS TEXT */
-.kids-text {
-  margin-top: 120px;
-  font-size: 22px;
-  position: relative;
-  z-index: 2;
-  text-shadow:
-    0 0 6px rgba(255,255,255,0.9),
-    0 0 12px rgba(255,255,255,0.7);
-}
-
-.section-kids iframe {
-  margin-top: 48px;
-  width: 100%;
-  max-width: 760px;
-  height: 420px;
-  border-radius: 28px;
-  border: none;
-  position: relative;
-  z-index: 2;
-}
-
-/* Decorative Hebrew Letters */
-.kids-letters {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.k-letter {
-  position: absolute;
-  font-size: 220px;
-  font-weight: bold;
-  opacity: 0.35;
-}
-
-.k1 { top: 5%; left: 4%; color: #e53935; }
-.k2 { top: 10%; right: 6%; color: #fb8c00; }
-.k3 { top: 38%; left: 8%; color: #fdd835; }
-.k4 { top: 28%; right: 14%; color: #43a047; }
-.k5 { bottom: 18%; left: 18%; color: #1e88e5; }
-.k6 { bottom: 10%; right: 20%; color: #3949ab; }
-.k7 { top: 55%; left: 42%; color: #8e24aa; }
-.k8 { top: 18%; left: 55%; color: #d81b60; }
-.k9 { bottom: 32%; right: 42%; color: #00acc1; }
-
 /* TESTIMONIALS */
 .testimonials-track {
   display: flex;
@@ -287,7 +232,7 @@ footer {
     align-items: center;
   }
 
-  .k-letter {
-    font-size: 140px;
+  .nav-links a {
+    font-size: 20px;
   }
 }
