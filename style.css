@@ -52,6 +52,16 @@ body {
   align-items: center;
 }
 
+/* ✅ white exterior shadow for hero text */
+.hero-text h1,
+.hero-text p {
+  text-shadow:
+    -2px -2px 0 #fff,
+     2px -2px 0 #fff,
+    -2px  2px 0 #fff,
+     2px  2px 0 #fff;
+}
+
 .hero-text h1 {
   font-size: 56px;
 }
@@ -78,7 +88,7 @@ body {
   position: relative;
 }
 
-/* ✅ RESTORED: white exterior shadow for readability */
+/* SECTION TITLES */
 .section-title {
   position: absolute;
   top: 60px;
@@ -182,7 +192,36 @@ body {
 .blob-photo.teacher2 { background-image: url("./images/teacher2.jpeg"); }
 .blob-photo.teacher3 { background-image: url("./images/teacher3.jpeg"); }
 
-/* ✅ KIDS LETTERS – RESTORED */
+/* ========================= */
+/* TESTIMONIALS – RESTORED */
+/* ========================= */
+
+.testimonials-track {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+
+.testimonial {
+  min-width: 360px;
+  background: white;
+  padding: 36px;
+  border-radius: 28px;
+  scroll-snap-align: start;
+  font-size: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+/* KIDS LETTERS (unchanged) */
 .kids-letters {
   position: absolute;
   inset: 0;
@@ -210,7 +249,6 @@ body {
 .k11 { top: 45%; left: 65%; color: #7cb342; }
 .k12 { bottom: 5%; left: 50%; color: #5c6bc0; }
 
-/* kids content above letters */
 .kids-text,
 .section-kids iframe {
   position: relative;
