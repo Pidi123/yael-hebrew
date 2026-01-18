@@ -29,17 +29,21 @@ body {
   z-index: 10;
 }
 
+/* LOGO FADE */
 .logo-box {
   width: 420px;
   height: 96px;
   background: url("./images/logo.jpeg") center / contain no-repeat;
+  mask-image: radial-gradient(circle, black 70%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle, black 70%, transparent 100%);
 }
 
+/* NAV LINKS – 2x */
 .nav-links a {
   margin-left: 32px;
   text-decoration: none;
   color: #102a43;
-  font-size: 18px;
+  font-size: 36px;
 }
 
 /* HERO */
@@ -145,7 +149,7 @@ body {
 
 .teacher-name {
   margin-top: 32px;
-  font-size: 20px;
+  font-size: 40px; /* 2x */
 }
 
 /* BLOBS */
@@ -195,6 +199,7 @@ body {
     0 0 12px rgba(255,255,255,0.7);
 }
 
+/* KIDS VIDEO */
 .section-kids iframe {
   margin-top: 48px;
   width: 100%;
@@ -206,7 +211,7 @@ body {
   z-index: 2;
 }
 
-/* Decorative Hebrew Letters */
+/* KIDS LETTERS */
 .kids-letters {
   position: absolute;
   inset: 0;
@@ -218,41 +223,20 @@ body {
   position: absolute;
   font-size: 220px;
   font-weight: bold;
-  opacity: 0.35;
+  opacity: 1;
 }
 
-.k1 { top: 5%; left: 4%; color: #e53935; }
-.k2 { top: 10%; right: 6%; color: #fb8c00; }
-.k3 { top: 38%; left: 8%; color: #fdd835; }
-.k4 { top: 28%; right: 14%; color: #43a047; }
-.k5 { bottom: 18%; left: 18%; color: #1e88e5; }
-.k6 { bottom: 10%; right: 20%; color: #3949ab; }
-.k7 { top: 55%; left: 42%; color: #8e24aa; }
-.k8 { top: 18%; left: 55%; color: #d81b60; }
-.k9 { bottom: 32%; right: 42%; color: #00acc1; }
-
-/* TESTIMONIALS */
-.testimonials-track {
-  display: flex;
-  gap: 40px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding-top: 120px;
-}
-
-.testimonial {
-  min-width: 360px;
+/* CONTACT WIDGET */
+.contact-widget {
+  margin: 160px auto 0;
+  display: inline-block;
+  padding: 48px 64px;
   background: white;
-  padding: 36px;
-  border-radius: 28px;
-  scroll-snap-align: start;
-  font-size: 18px;
-}
-
-.testimonial span {
-  display: block;
-  margin-top: 16px;
-  font-weight: bold;
+  border-radius: 36px;
+  font-size: 60px; /* 3x */
+  box-shadow:
+    0 40px 80px rgba(0,0,0,0.25),
+    inset 0 -6px 12px rgba(0,0,0,0.08);
 }
 
 /* FOOTER */
@@ -268,23 +252,22 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .nav-links a {
+    font-size: 22px;
+  }
+
   .section-title {
     font-size: 42px;
     left: 32px;
   }
 
-  .hero-size {
-    width: 360px;
+  .teacher-name {
+    font-size: 28px;
   }
 
-  .teacher-size {
-    width: 260px;
-  }
-
-  .process-steps,
-  .teacher-row {
-    flex-direction: column;
-    align-items: center;
+  .contact-widget {
+    font-size: 28px;
+    padding: 32px;
   }
 
   .k-letter {
