@@ -92,8 +92,9 @@ body {
 }
 
 .section-kids {
-  background: url("./images/bg3.jpeg") center / cover;
+  background: url("./images/bg-kids.jpeg") center / cover;
   text-align: center;
+  overflow: hidden;
 }
 
 .section-testimonials {
@@ -174,6 +175,50 @@ body {
 .blob-photo.teacher2 { background-image: url("./images/teacher2.jpeg"); }
 .blob-photo.teacher3 { background-image: url("./images/teacher3.jpeg"); }
 
+/* KIDS — FUN & BOLD */
+.kids-text {
+  margin-top: 120px;
+  font-size: 22px;
+  position: relative;
+  z-index: 2;
+}
+
+.section-kids iframe {
+  margin-top: 48px;
+  width: 100%;
+  max-width: 760px;
+  height: 420px;
+  border-radius: 28px;
+  border: none;
+  position: relative;
+  z-index: 2;
+}
+
+/* Decorative Hebrew Letters */
+.kids-letters {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.k-letter {
+  position: absolute;
+  font-size: 220px;
+  font-weight: bold;
+  opacity: 0.35;
+}
+
+.k1 { top: 5%; left: 4%; color: #e53935; }
+.k2 { top: 10%; right: 6%; color: #fb8c00; }
+.k3 { top: 38%; left: 8%; color: #fdd835; }
+.k4 { top: 28%; right: 14%; color: #43a047; }
+.k5 { bottom: 18%; left: 18%; color: #1e88e5; }
+.k6 { bottom: 10%; right: 20%; color: #3949ab; }
+.k7 { top: 55%; left: 42%; color: #8e24aa; }
+.k8 { top: 18%; left: 55%; color: #d81b60; }
+.k9 { bottom: 32%; right: 42%; color: #00acc1; }
+
 /* TESTIMONIALS */
 .testimonials-track {
   display: flex;
@@ -228,5 +273,9 @@ footer {
   .teacher-row {
     flex-direction: column;
     align-items: center;
+  }
+
+  .k-letter {
+    font-size: 140px;
   }
 }
